@@ -1,0 +1,97 @@
+:root {
+	--white:  antiquewhite;
+	--black:  black;
+	--yellow: #caa32a;
+
+	--bass:   0.4;
+	--treble: 0.4;
+	--volume: 0.4;
+
+	--font-base: 28;
+	--font-break: 1024;
+
+	--font-size-base: calc(var(--font-base) * 1px);
+	--font-size-break: calc(var(--font-break) * 1px);
+	--font-size-resp: calc(var(--font-base) * 100 / var(--font-break) * 1vw);
+	--font-size: min(var(--font-size-resp), var(--font-size-base));
+}
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	// font-family: Logic;
+}
+
+
+html {
+	font-size: var(--font-size);
+}
+
+
+body {
+	height: 100vh;
+	// overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem 2rem 2rem;
+	background-color: black;
+}
+
+
+.logo {
+	position: relative;
+	width: 100%;
+	max-width: calc(var(--font-size-break) - 4rem);
+	// max-height: 95vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 1em 1.5em 1.5em 1.5em;
+	// background-color: var(--white);
+	// border-radius: 1em;
+
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	// aspect-ratio: 40 / 9;
+	height: 25vh;
+
+}
+
+.game {
+	// background-color: yellow;
+
+		position: relative;
+	width: 100%;
+	max-width: calc(var(--font-size-break) - 4rem);
+	// aspect-ratio: 16 / 15;
+	height: 60vh;
+	display: flex;
+		justify-content: center;
+	// align-items: center;
+
+
+
+}
+
+
+.ctrl {
+		position: relative;
+	width: 100%;
+	max-width: calc(var(--font-size-break) - 4rem);
+	// aspect-ratio: 16 / 15;
+	height: 10vh;
+	display: flex;
+		justify-content: center;
+		color: white;
+	font-size: 0.5em;
+
+}
