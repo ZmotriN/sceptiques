@@ -1,7 +1,7 @@
 /******************************************************
  *                    Create Element                  *
  ******************************************************/
-self.create = (tag, classname=null, content=null, attrs={}) => {
+export const create = (tag, classname=null, content=null, attrs={}) => {
     const elm = document.createElement(tag);
     if(classname) elm.className = classname;
     if(content) elm.innerHTML = content;
@@ -18,7 +18,7 @@ HTMLElement.prototype.create = function(tag, classname=null, content=null, attrs
 /******************************************************
  *               DOMDocument async loaded             *
  ******************************************************/
-self.documentReady = function(clb = null) {
+export const documentReady = function(clb = null) {
 	return new Promise((res) => {
 		if (document.readyState === "loading") {
 			document.addEventListener("DOMContentLoaded", async () => {

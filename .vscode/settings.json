@@ -6,7 +6,7 @@
     "terminal.integrated.env.osx": {
         "PATH": "${workspaceFolder}/node_modules/.bin:${env:PATH}:${workspaceFolder}"
     },
-    "liveServer.settings.port": 5509,
+    "liveServer.settings.port": 5511,
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.root": "./src/",
     "liveServer.settings.ignoreFiles": [
